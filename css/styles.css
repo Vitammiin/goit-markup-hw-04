@@ -19,6 +19,7 @@
       padding-top: 24px;
     padding-bottom: 24px;
     display: block;
+    
    
  
  }
@@ -100,6 +101,11 @@ margin-right: auto;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     font-weight: 500;
+    text-align: center;
+        padding-top: 180px;
+        padding-bottom: 180px;
+        background-repeat: no-repeat;
+        background-position: center;
  
 
 
@@ -159,7 +165,7 @@ color: #434455
 ;
 
 align-content: center;
-margin-bottom: 30px;
+margin-bottom: 8px;
 }
 
 .capital {
@@ -347,15 +353,26 @@ width: 264px;
     margin-bottom: 48px;
  }
  .section {
-    background-color: #2E2F42;
+  
+    flex-grow: 1;
+   padding: 180px 100px 180px;
+   text-align: center;
+   background-image:linear-gradient(rgba(46, 47, 66, 0.7),
+   rgba(46, 47, 66, 0.7)),
+    url(../images/front/people-office.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+
+/*
+        text-align: center;
+        padding-top: 180px;
+        padding-bottom: 180px;
    
-    background-image: url(../images/front/people-office.jpg);
-    text-align: center;
-    padding-top: 180px;
-    padding-bottom: 180px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        background-position: center;
+        background-size: cover;
+   */
     
  
 }
@@ -504,21 +521,37 @@ img {
     .social-list {
         display: flex;
         justify-content: center;
-        gap: 15px;
+        
         
     } 
+
+    .gap-al {
+        gap: 24px;
+    }
 
     .list {
     }
     .social-item {
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        display: block;
-        background-color: #8b3c3c;
+       
+        background-color: #4D5AE5;
         
-    }
+    } 
     .social-link {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .link {
+   
+    .bord-soc-icon {
+        fill: chartreuse;
+    }
+
+    .social-link:is(:hover, :focus) {
+        background-color: palevioletred;
     }
