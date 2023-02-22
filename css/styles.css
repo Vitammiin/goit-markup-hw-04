@@ -15,9 +15,7 @@
 }
 /*---------text no point-----*/
 .link {
-    text-decoration: none;
-      padding-top: 24px;
-    padding-bottom: 24px;
+    text-decoration: none; 
     display: block;
     
    
@@ -32,6 +30,8 @@
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: #E7E9FC
+    ;
 }
 
 
@@ -88,6 +88,8 @@ letter-spacing: 0.02em;
 .header-tel {
 font-size: 16px;
 line-height: 1.5;
+padding-top: 25px;
+padding-bottom: 25px;
 }
 
 .header-tel:focus {
@@ -378,9 +380,11 @@ width: 264px;
     margin-bottom: 48px;
  }
  .section {
-  
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
     flex-grow: 1;
-   padding: 180px 100px 180px;
+   padding: 188px 0;
    text-align: center;
    background-image:linear-gradient(rgba(46, 47, 66, 0.7),
    rgba(46, 47, 66, 0.7)),
@@ -562,9 +566,7 @@ img {
     .social-item {
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-       
-        background-color: #4D5AE5;
+        
         
     } 
     .social-link {
@@ -574,6 +576,8 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 50%;
+        background-color: #4D5AE5;
     }
    
     .bord-soc-icon {
@@ -581,7 +585,7 @@ img {
     }
 
     .social-link:is(:hover, :focus) {
-        background-color: palevioletred;
+        background-color: #404BBF;
     }
 
 
@@ -610,22 +614,20 @@ img {
         width: 100%;
         height: 100%;
         border: 1px solid #8E8F99;
-        border-radius: 5px;
+        border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
 .test-link:is(:hover, :focus) {
-border-color: #37d0ff;
+border-color: #404BBF;
     }
 
- .test-link:is(:hover, :focus) .test-icon {
-     fill: #37d0ff;
-            }
+
 
 .test-icon:is(:hover, :focus) {
-    fill: #37d0ff;
+    fill: #404BBF;
 }
 
     .link {
@@ -658,9 +660,8 @@ border-color: #37d0ff;
     .foot-li {
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-        background-color:rgba(255, 255, 255, 0.1);
-        display: flex;
+
+     
         justify-content: center;
         
     }
@@ -671,6 +672,8 @@ border-color: #37d0ff;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 50%;
+        background-color:rgba(255, 255, 255, 0.1);
     }
     .foot-svg {
     }
@@ -680,12 +683,28 @@ border-color: #37d0ff;
         width: 264px;
         height: 112px;
         background-color:#F4F4FD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
       
     }
 
-    .foot-svg {
+    .foot-li:is(:hover, :focuc) {
+        background-color: #31D0AA;
     
  
  
+    }
+
+    .test-link :is(:hover, :focuc) {
+        background-color: #404BBF;
+fill:  #404BBF;;
+ 
+ 
+    }
+
+    .all:is(:hover, :focuc) {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+        display: block;
     }
